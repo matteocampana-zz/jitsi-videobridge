@@ -1159,7 +1159,7 @@ public class RtpChannel
             }
 
             EventAdmin eventAdmin = conference.getEventAdmin();
-            if (eventAdmin != null)
+            if (eventAdmin != null && streamTarget != null)
                 eventAdmin.sendEvent(EventFactory.streamStarted(this));
         }
 
